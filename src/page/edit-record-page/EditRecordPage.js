@@ -70,6 +70,10 @@ function EditRecordPage(props) {
                          onChange={(e) => {
                              e.preventDefault();
                              setFirstName(e.target.value)
+                         }} onKeyPress={(e) => {
+                             if (e.key === "Enter") {
+                                 onSubmit()
+                             }
                          }}/>
                      </label>
                  </div>
@@ -80,6 +84,10 @@ function EditRecordPage(props) {
                          onChange={(e) => {
                              e.preventDefault()
                              setLastName(e.target.value)
+                         }} onKeyPress={(e) => {
+                             if (e.key === "Enter") {
+                                 onSubmit()
+                             }
                          }}/>
                      </label>
                  </div>

@@ -110,6 +110,10 @@ function AddRecordPage(props) {
                                 setError("")
                             }
                             setId(e.target.value);
+                        }} onKeyPress={(e) => {
+                            if (e.key === "Enter") {
+                                onSubmit()
+                            }
                         }}/>
                     </label>
                     <label>
@@ -120,6 +124,10 @@ function AddRecordPage(props) {
                                 setError("")
                             }
                             setFirstName(e.target.value);
+                        }} onKeyPress={(e) => {
+                            if (e.key === "Enter") {
+                                onSubmit()
+                            }
                         }}/>
                     </label>
                     <label>
@@ -130,6 +138,10 @@ function AddRecordPage(props) {
                                 setError("")
                             }
                             setLastName(e.target.value);
+                        }} onKeyPress={(e) => {
+                            if (e.key === "Enter") {
+                                onSubmit()
+                            }
                         }}/>
                     </label>
                     {onError()}
