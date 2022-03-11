@@ -1,0 +1,11 @@
+.delete-button {
+    height: 33px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.edit-button {
+    height: 33px;
+    border-radius: 2px;
+    cursor: pointer;
+}
