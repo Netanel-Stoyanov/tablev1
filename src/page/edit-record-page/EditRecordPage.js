@@ -1,6 +1,6 @@
 import './EditRecordPage.css'
 import {ActionBar} from "../../component/action-bar/ActionBar";
-import {editFirstNameRecord, editLastNameRecord, editRecord, getAllRecords} from "../../redux/action";
+import {editRecord, getAllRecords} from "../../redux/action";
 import {connect} from "react-redux";
 import {useState} from "react";
 import {useHistory} from "react-router-dom";
