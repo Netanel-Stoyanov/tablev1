@@ -59,7 +59,7 @@ function EditRecordPage(props) {
 
     return (
         <div className={"main-container-edit-record"}>
-            <ActionBar />
+            <ActionBar type={"HOME"}/>
             <div className={"inner-container-edit"}>
              <form className={"form-edit"}>
                  <h1>EDIT RECORD</h1>
