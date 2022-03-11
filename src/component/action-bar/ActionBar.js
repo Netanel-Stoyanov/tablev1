@@ -10,7 +10,7 @@ export function ActionBar(props) {
             return <div onClick={() => {history.push('/add')}} className={"button"}>
                 ADD
             </div>
-        } else {
+        } else if (props.type === "HOME"){
             return <div onClick={() => {history.push('/')}} className={"button"}>
                 HOME
             </div>
