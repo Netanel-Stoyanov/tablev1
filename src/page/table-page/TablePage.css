@@ -30,6 +30,29 @@ tr {
     vertical-align: middle;
 }
 
+.table-header {
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 850px) {
+    .table {
+        margin-left: 60px;
+    }
+    .table-header {
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .table {
+        margin-left: 30px;
+    }
+    .table-header {
+        margin-left: 30px;
+    }
+}
+
+
 .id {
     width: 15%;
 }
@@ -42,9 +65,7 @@ tr {
     width: 30%;
 }
 
-.table-header {
-    margin-left: 100px;
-}
+
 
 .table {
     margin-top: 50px;
