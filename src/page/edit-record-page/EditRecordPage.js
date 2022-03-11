@@ -34,13 +34,13 @@ function EditRecordPage(props) {
         if (firstName === "") {
             isFormHasError = true;
             setError("First")
-        } else if (!/^[a-z]+$/i.test(firstName)) {
+        } else if (!firstName.match("^[ A-Za-z]+$")) {
             isFormHasError = true;
             setError("First/Valid")
         } else if (lastName === "") {
             isFormHasError = true;
             setError("Last")
-        } else if (!/^[a-z]+$/i.test(lastName)) {
+        } else if (!lastName.match("^[ A-Za-z]+$")) {
             isFormHasError = true;
             setError("Last/Valid")
         }
