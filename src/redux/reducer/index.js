@@ -13,13 +13,10 @@ const recordReducer = (currentState = [], action) => {
             const index = newArray.findIndex(record => record.id === action.payload);
             newArray.splice(index, 1);
             return newArray;
-        case "RECORD/EDIT-FIRST" :
-            let recordFirstName = currentState.find(record => record.id === action.payload.recordId);
-            recordFirstName.firstName = action.payload.firstName;
-            return [...currentState];
-        case "RECORD/EDIT-LAST" :
-            let recordLastName = currentState.find(record => record.id === action.payload.recordId);
-            recordLastName.lastName = action.payload.lastName;
+        case "RECORD/EDIT" :
+            let record = currentState.find(record => record.id === action.payload.recordId);
+            record.firstName = action.payload.record.firstName;
+            record.lastName = action.payload.record.lastName;
             return [...currentState];
         default:
             return currentState;

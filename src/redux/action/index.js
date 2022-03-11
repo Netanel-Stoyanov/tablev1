@@ -18,16 +18,11 @@ export const deleteRecord = (recordId) => {
     };
 };
 
-export const editFirstNameRecord = (recordId, firstName) => {
+export const editRecord = (recordId, record) => {
     return {
-        type: "RECORD/EDIT-FIRST",
-        payload: {recordId, firstName}
+        type: "RECORD/EDIT",
+        payload: {recordId, record}
     };
 };
 
-export const editLastNameRecord = (recordId, lastName) => {
-    return {
-        type: "RECORD/EDIT-LAST",
-        payload: {recordId, lastName}
-    };
-};
+
